@@ -164,7 +164,8 @@ def mine():
         block = blockchain.new_block(data['proof'], previous_hash)
 
         response = {
-            "message": "New Block Forged"
+            "message": "New Block Forged",
+            "block": block
         }
     else:
         response = {
